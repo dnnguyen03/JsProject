@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap");
+@import "./mixin.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: hsl(210, 36%, 96%);
+  .header {
+    padding: 16px 300px;
+    @include flex-center(row);
+    justify-content: space-around;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    @media screen and (max-width: 800px) {
+      padding: 16px 0;
+      //   padding-bottom: 0;
+      @include flex-center(column);
+    }
+    .logo-nav {
+      @include flex-center(unset);
+      @media screen and (max-width: 800px) {
+        width: 100%;
+        padding: 0 16px;
+      }
+      img {
+        height: 40px;
+      }
+    }
+    .nav-toggle {
+      font-size: 24px;
+      cursor: pointer;
+      display: none;
+      @media screen and (max-width: 800px) {
+        display: block;
+        color: #49a6e9;
+        margin-left: auto;
+        transition: 0.5s;
+        &:hover {
+          transform: rotate(90deg);
+          color: black;
+        }
+      }
+    }
+    .links {
+      display: flex;
+      font-size: 16px;
+      transition: 0.3s;
+      @media screen and (max-width: 800px) {
+        display: unset;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+      }
+      li {
+        color: hsl(209, 34%, 30%);
+        padding: 0 10px;
+        letter-spacing: 4px;
+        cursor: pointer;
+        @media screen and (max-width: 800px) {
+          padding: 10px 0;
+          &:first-child {
+            margin-top: 10px;
+          }
+          &:hover {
+            background-color: hsl(205, 86%, 81%);
+          }
+          &:hover a {
+            margin-left: 24px;
+            color: #49a6e9;
+          }
+        }
+        a {
+          margin-left: 16px;
+          transition: 0.5s;
+        }
+      }
+    }
+
+    .social-icon {
+      display: flex;
+      @media screen and (max-width: 800px) {
+        display: none;
+      }
+      a {
+        color: #49a6e9;
+        margin: 0 8px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .show {
+    height: 175px !important;
+  }
+}
