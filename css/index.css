@@ -25,6 +25,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #e2e8f0;
+  padding-bottom: 40px;
 }
 
 .container .domProJect {
