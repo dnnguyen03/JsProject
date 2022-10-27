@@ -28,16 +28,14 @@
         margin-top: 10px;
       }
     }
-
     .section-center {
       width: 90%;
       max-width: 1150px;
       margin: 0 auto;
       margin-top: 50px;
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(315px, 1fr));
       gap: 50px 40px;
-
       .item-section {
         background-color: white;
         border-radius: 5px;

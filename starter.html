@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/Starter.css" />
     <title>Starter</title>
   </head>
@@ -17,19 +21,31 @@
         <div class="list-item">
           <div class="item">
             <div class="img-item">
+              <div class="quote-right">
+                <i class="fa-solid fa-quote-right"></i>
+              </div>
               <img
+                id="img"
                 src="https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg"
                 alt=""
               />
             </div>
-            <div class="name"></div>
-            <div class="job"></div>
-            <div class="detail"></div>
-            <div class="icon"></div>
-            <div class="btn"></div>
+            <div id="name"><h4></h4></div>
+            <div id="job"></div>
+            <div id="detail"></div>
+            <div class="btn-icon">
+              <div class="btn-prev">
+                <i class="fa-solid fa-chevron-left"></i>
+              </div>
+              <div class="btn-next">
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+            <button class="btn">surprise me</button>
           </div>
         </div>
       </div>
     </main>
+    <script src="js/starter.js"></script>
   </body>
 </html>

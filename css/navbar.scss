@@ -51,7 +51,8 @@
     .links {
       display: flex;
       font-size: 16px;
-      transition: 0.3s;
+      transition: all 0.3s linear;
+
       @media screen and (max-width: 800px) {
         display: unset;
         width: 100%;
@@ -63,6 +64,8 @@
         padding: 0 10px;
         letter-spacing: 4px;
         cursor: pointer;
+
+        text-transform: capitalize;
         @media screen and (max-width: 800px) {
           padding: 10px 0;
           &:first-child {
@@ -72,13 +75,14 @@
             background-color: hsl(205, 86%, 81%);
           }
           &:hover a {
-            margin-left: 24px;
+            margin-left: 23px;
             color: #49a6e9;
           }
         }
         a {
+          color: #324d67;
           margin-left: 16px;
-          transition: 0.5s;
+          transition: all 0.3s linear;
         }
       }
     }

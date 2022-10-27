@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -58,13 +59,28 @@ main .container .title .title-underline {
 
 main .container .list-item {
   position: relative;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  max-width: 620px;
 }
 
 main .container .list-item .item {
   background-color: white;
-  padding: 15px 20px;
+  padding: 24px 32px;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 main .container .list-item .item .img-item {
@@ -73,13 +89,117 @@ main .container .list-item .item .img-item {
   height: 150px;
   border-radius: 50%;
   margin: 0 auto;
-  margin-bottom: 1.5rem;
+  margin-bottom: 24px;
+}
+
+main .container .list-item .item .img-item .quote-right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background-color: #49a6e9;
+  color: white;
+  z-index: 3;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: unset;
+  -webkit-box-direction: unset;
+      -ms-flex-direction: unset;
+          flex-direction: unset;
+}
+
+main .container .list-item .item .img-item .quote-right i {
+  font-size: 20px;
+}
+
+main .container .list-item .item .img-item::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #49a6e9;
+  position: absolute;
+  border-radius: 50%;
+  top: -3px;
+  right: -8px;
 }
 
 main .container .list-item .item .img-item img {
+  position: relative;
   height: 100%;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
+  z-index: 2;
+}
+
+main .container .list-item .item #name {
+  color: #102a42;
+  letter-spacing: 4px;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+main .container .list-item .item #job {
+  color: #49a6e9;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+main .container .list-item .item #detail {
+  font-family: "Open Sans", sans-serif;
+  color: #617d98;
+  margin-bottom: 12px;
+  font-size: 16px;
+  text-align: center;
+}
+
+main .container .list-item .item .btn-icon {
+  margin-bottom: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: unset;
+  -webkit-box-direction: unset;
+      -ms-flex-direction: unset;
+          flex-direction: unset;
+}
+
+main .container .list-item .item .btn-icon i {
+  font-size: 20px;
+  color: #8bcbf9;
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+main .container .list-item .item button {
+  padding: 4px 8px;
+  cursor: pointer;
+  border-radius: 8px;
+  text-transform: capitalize;
+  border: 2px solid #49a6e9;
+  color: #49a6e9;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main .container .list-item .item button:hover {
+  background-color: #49a6e9;
+  color: black;
 }
 /*# sourceMappingURL=Starter.css.map */
