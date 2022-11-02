@@ -22,7 +22,7 @@ main {
       @include flex-center(column);
       color: #102a42;
       margin-bottom: 64px;
-
+      text-transform: capitalize;
       .title-underline {
         height: 4px;
         width: 100px;
