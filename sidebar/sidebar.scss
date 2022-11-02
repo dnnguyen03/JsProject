@@ -1,0 +1,99 @@
+@import "../mixin/mixin.scss";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  background: hsl(210, 36%, 96%);
+  .bars-toggle {
+    position: fixed;
+    top: 2rem;
+    right: 3rem;
+    font-size: 2rem;
+    color: #49a6e9;
+    cursor: pointer;
+    animation: bars 2s ease-in-out infinite;
+  }
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 400px;
+    background: white;
+    display: grid;
+    row-gap: 1rem;
+    grid-template-rows: auto 1fr auto;
+    transform: translateX(-100%);
+    transition: all 0.3s linear;
+    @media screen and (max-width: 675px) {
+      width: 100%;
+    }
+
+    .sidebar-header {
+      padding: 1rem 1.5rem;
+      @include flex-center(unset);
+      justify-content: space-between;
+      .close-btn i {
+        font-size: 1.75em;
+        font-weight: 900;
+        color: hsl(360, 67%, 44%);
+        cursor: pointer;
+        &:hover {
+          animation: btnClose 0.3s linear;
+        }
+      }
+    }
+    .links a {
+      display: block;
+      font-size: 1.5rem;
+      text-transform: capitalize;
+      padding: 1rem 1.5rem;
+      color: #617d98;
+      transition: all 0.3s linear;
+      &:hover {
+        background: hsl(205, 86%, 81%);
+        color: #49a6e9;
+        padding-left: 1.75rem;
+      }
+    }
+    .social-icon {
+      display: flex;
+      justify-self: center;
+      padding-bottom: 2rem;
+      a {
+        font-size: 1.5rem;
+        margin: 0 0.5rem;
+        color: #49a6e9;
+        transition: all 0.3s linear;
+        &:hover {
+          color: hsl(205, 86%, 17%);
+        }
+      }
+    }
+  }
+}
+.show-sidebar {
+  transform: translateX(0) !important;
+}
+@keyframes bars {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes btnClose {
+  100% {
+    transform: rotate(360deg);
+  }
+}

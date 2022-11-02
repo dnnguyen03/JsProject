@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+body .preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+body main {
+  min-height: 100vh;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+body main::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+body main .video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -2;
+}
+
+body main h1 {
+  color: #fff;
+  line-height: 1;
+  font-size: 4rem;
+  letter-spacing: 0.25rem;
+  text-transform: capitalize;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+body main .switch-btn {
+  position: absolute;
+  bottom: 7%;
+  left: 7%;
+  width: 7rem;
+  height: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 0.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border: none;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+body main .switch-btn span {
+  display: inline-block;
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  color: #49a6e9;
+}
+
+body main .switch-btn .switch {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #49a6e9;
+  border-radius: 0.5rem;
+  display: block;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.hide-preloader {
+  z-index: -10;
+  visibility: hidden;
+}
+
+.slide .switch {
+  left: 50% !important;
+}
+/*# sourceMappingURL=video.css.map */

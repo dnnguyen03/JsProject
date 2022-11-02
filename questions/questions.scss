@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap");
+@import "../mixin/mixin.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  background: #f1f5f8;
+  display: grid;
+  place-items: center;
+  font-size: 1rem;
+  .title {
+    margin-top: 15vh;
+    margin-bottom: 4rem;
+    display: grid;
+    place-items: center;
+    h2 {
+      color: #c59d5f;
+      font-family: "Great Vibes", cursive;
+      line-height: 1.5;
+      font-size: 2.5rem;
+      letter-spacing: 0.25rem;
+      text-transform: capitalize;
+      text-align: center;
+    }
+  }
+  .list-questions {
+    .item-question {
+      background: #fff;
+      border-radius: 0.5rem;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem 1.5rem 0 1.5rem;
+      margin-bottom: 2rem;
+      width: 620px;
+      .question-title {
+        text-transform: capitalize;
+        @include flex-center(row);
+        justify-content: space-between;
+        padding-bottom: 1rem;
+        p {
+          letter-spacing: 0.25rem;
+          color: hsl(209, 61%, 16%);
+        }
+      }
+      .question-btn {
+        position: relative;
+        font-size: 1.5rem;
+        background: transparent;
+        border-color: transparent;
+        cursor: pointer;
+        color: #c59d5f;
+        transition: all 0.3s linear;
+        &:hover {
+          transform: rotate(90deg);
+        }
+        .minus-icon {
+          display: none;
+        }
+      }
+      .question-text {
+        padding: 1rem 0 1.5rem 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+        display: none;
+        p {
+          color: hsl(210, 22%, 49%);
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}
+.show .minus-icon {
+  display: block !important;
+}
+.show .plus-icon {
+  display: none !important;
+}
+.show .question-text {
+  display: block !important;
+}
