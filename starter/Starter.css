@@ -48,6 +48,7 @@ main .container .title {
           flex-direction: column;
   color: #102a42;
   margin-bottom: 64px;
+  text-transform: capitalize;
 }
 
 main .container .title .title-underline {
