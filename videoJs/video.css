@@ -26,6 +26,8 @@ body .preloader {
           justify-content: center;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  z-index: 2;
+  background: white;
 }
 
 body main {

@@ -19,6 +19,8 @@ body {
     align-items: center;
     justify-content: center;
     transition: all 0.3s linear;
+    z-index: 2;
+    background: white;
   }
   main {
     min-height: 100vh;

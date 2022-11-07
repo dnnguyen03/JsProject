@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap");
+@import "../mixin/mixin.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  //   font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: hsl(210, 36%, 96%);
+}
+.section {
+  padding: 5rem 0;
+  .title {
+    text-align: center;
+    margin-bottom: 4rem;
+    h2 {
+      font-size: 2.5rem;
+      line-height: 1;
+      text-transform: capitalize;
+      margin-bottom: 0.75rem;
+      letter-spacing: 0.25rem;
+      font-family: "Roboto", sans-serif;
+      color: hsl(209, 61%, 16%);
+    }
+    p {
+      width: 80%;
+      margin: 0 auto;
+      font-size: 1rem;
+      color: hsl(210, 22%, 49%);
+      line-height: 1.5rem;
+    }
+  }
+  .about-center {
+    width: 95vw;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    @media screen and (max-width: 990px) {
+      width: 90vw;
+      display: block;
+    }
+    .about-img {
+      @media screen and (max-width: 990px) {
+        margin-bottom: 2rem;
+      }
+      img {
+        height: 20rem;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 0.5rem;
+      }
+    }
+    .about {
+      border-radius: 0.5rem;
+      display: grid;
+      grid-template-rows: auto 1fr;
+      background-color: #fff;
+      overflow: hidden;
+      .btn-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        .tab-btn {
+          line-height: 1.25;
+          padding: 1rem 0;
+          border: none;
+          text-transform: capitalize;
+          font-size: 1rem;
+          display: block;
+          cursor: pointer;
+          transition: all 0.3s linear;
+          letter-spacing: 0.25rem;
+          background-color: hsl(212, 33%, 89%);
+          &:hover {
+            background-color: hsl(205, 100%, 96%);
+            color: #49a6e9;
+          }
+        }
+      }
+      .about-content {
+        padding: 2rem 1.5rem;
+        .content {
+          display: none;
+          h4 {
+            line-height: 1;
+            font-size: 1rem;
+            text-transform: capitalize;
+            letter-spacing: 0.25rem;
+            font-family: "Roboto", sans-serif;
+            color: hsl(209, 61%, 16%);
+            margin-bottom: 12px;
+            font-weight: bold;
+          }
+          p {
+            margin-bottom: 1.25rem;
+            color: hsl(210, 22%, 49%);
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+  }
+}
+
+.active {
+  display: block !important;
+  background-color: #fff !important;
+  color: black !important;
+}
