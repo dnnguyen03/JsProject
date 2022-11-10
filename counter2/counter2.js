@@ -17,7 +17,6 @@ class Counter {
     this.decreaseBtn = element.querySelector(".decrease");
     this.valueDOM = element.querySelector(".value");
     this.valueDOM.textContent = this.value;
-    // bind this to all function
     this.increase = this.increase.bind(this);
     this.decrease = this.decrease.bind(this);
     this.reset = this.reset.bind(this);
