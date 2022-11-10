@@ -27,6 +27,7 @@ function carousel() {
     slide.style.transform = `translateX(-${counter * 100}%)`;
   });
 }
+
 //---------slide auto----------
 // prevBtn.style.display = "none";
 // setInterval(function () {
