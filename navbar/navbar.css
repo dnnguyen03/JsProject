@@ -94,14 +94,15 @@
     display: block;
     color: #49a6e9;
     margin-left: auto;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
   }
-  .container .header .nav-toggle:hover {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-    color: black;
-  }
+}
+
+.container .header .clickNav {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  color: black;
 }
 
 .container .header .links {

@@ -89,6 +89,12 @@ const data = [
     imgSrc: "img/img15.webp",
     imgFooter: "slider",
   },
+  {
+    id: 16,
+    href: "./counter2/counter2.html",
+    imgSrc: "img/img16.webp",
+    imgFooter: "counter",
+  },
 ];
 const DomPj = document.querySelector(".section-center");
 window.addEventListener("DOMContentLoaded", function () {
