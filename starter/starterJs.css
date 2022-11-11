@@ -154,6 +154,7 @@ main .container .list-item .item #job {
   color: #49a6e9;
   margin-bottom: 8px;
   font-size: 14px;
+  text-transform: capitalize;
 }
 
 main .container .list-item .item #detail {

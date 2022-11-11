@@ -95,6 +95,12 @@ const data = [
     imgSrc: "img/img16.webp",
     imgFooter: "counter",
   },
+  {
+    id: 21,
+    href: "./dadJoker/dadJoker.html",
+    imgSrc: "img/img21.webp",
+    imgFooter: "dad jokes",
+  },
 ];
 const DomPj = document.querySelector(".section-center");
 window.addEventListener("DOMContentLoaded", function () {
