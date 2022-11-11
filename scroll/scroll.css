@@ -27,6 +27,8 @@ header {
 header nav {
   padding: 1rem 1.5rem;
   width: 100%;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 header nav .nav-center {

@@ -23,6 +23,7 @@ header {
   nav {
     padding: 1rem 1.5rem;
     width: 100%;
+    transition: all 0.3s ease-out;
     .nav-center {
       width: 90vw;
       max-width: 1170px;
