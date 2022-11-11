@@ -8,6 +8,6 @@ function show() {
 btn.addEventListener("click", () => {
   show();
 });
-btnClose.addEventListener("click", () => {
+btnClose.addEventListener("click", (e) => {
   show();
 });

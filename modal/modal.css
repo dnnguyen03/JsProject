@@ -104,6 +104,8 @@ main .modal-overlay .modal-container {
   height: 30%;
   position: relative;
   border-radius: 8px;
+  -webkit-animation: modal 0.5s forwards;
+          animation: modal 0.5s forwards;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -145,5 +147,23 @@ main .modal-overlay .modal-container .btn-close:hover {
 
 .hiden {
   display: none !important;
+}
+
+@-webkit-keyframes modal {
+  0% {
+    scale: 0;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes modal {
+  0% {
+    scale: 0;
+  }
+  100% {
+    scale: 1;
+  }
 }
 /*# sourceMappingURL=modal.css.map */

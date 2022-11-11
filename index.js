@@ -105,6 +105,23 @@ const data = [
 const DomPj = document.querySelector(".section-center");
 window.addEventListener("DOMContentLoaded", function () {
   displayDataItems(data);
+  // const listItem = document.querySelectorAll(".item-section");
+  // listItem.forEach((item) => {
+  //   if (item.offsetTop - window.scrollY < 870) {
+  //     item.classList.add("active");
+  //   }
+  // });
+  // document.addEventListener("scroll", () => {
+  //   console.log(listItem[0].offsetTop - window.scrollY);
+  //   listItem.forEach((item) => {
+  //     if (item.offsetTop - window.scrollY < 870) {
+  //       item.classList.add("active");
+  //     }
+  //     if (item.offsetTop - window.scrollY > 870) {
+  //       item.classList.remove("active");
+  //     }
+  //   });
+  // });
 });
 function displayDataItems(dataItem) {
   let displayData = dataItem.map(function (item) {
