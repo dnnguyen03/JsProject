@@ -44,10 +44,6 @@
         overflow: hidden;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
         transition: all 0.3s;
-        &:hover {
-          transform: scale(1.06);
-        }
-
         .img-container {
           img {
             width: 100%;
@@ -69,29 +65,29 @@
     }
   }
 }
-.active {
-  animation: showTop 1s ease-in-out forwards;
+.activeShowTop {
+  animation: showItem 1s ease forwards;
 }
-.activeBT {
-  animation: showBottom 1s ease-in-out forwards;
-}
-@keyframes showTop {
+// .activeShowBottom {
+//   animation: showItem2 1s ease forwards;
+// }
+@keyframes showItem {
   from {
-    opacity: 0;
-    transform: translate(0, 100px);
+    opacity: 0.3;
+    transform: translateY(100px);
   }
   to {
     opacity: 1;
-    transform: translate(0, 0);
+    transform: translateY(0);
   }
 }
-@keyframes showBottom {
-  from {
-    opacity: 0;
-    transform: translate(0, -100px);
-  }
-  to {
-    opacity: 1;
-    transform: translate(0, 0);
-  }
-}
+// @keyframes showItem2 {
+//   from {
+//     opacity: 0.3;
+//     transform: translateY(-100px);
+//   }
+//   to {
+//     opacity: 1;
+//     transform: translateY(0);
+//   }
+// }

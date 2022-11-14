@@ -96,6 +96,18 @@ const data = [
     imgFooter: "counter",
   },
   {
+    id: 19,
+    href: "./darkMode/darkMode.html",
+    imgSrc: "img/img19.webp",
+    imgFooter: "dark mode",
+  },
+  {
+    id: 20,
+    href: "./filters/filters.html",
+    imgSrc: "img/img20.webp",
+    imgFooter: "filters",
+  },
+  {
     id: 21,
     href: "./dadJoker/dadJoker.html",
     imgSrc: "img/img21.webp",
@@ -105,23 +117,24 @@ const data = [
 const DomPj = document.querySelector(".section-center");
 window.addEventListener("DOMContentLoaded", function () {
   displayDataItems(data);
-  // const listItem = document.querySelectorAll(".item-section");
-  // listItem.forEach((item) => {
-  //   if (item.offsetTop - window.scrollY < 870) {
-  //     item.classList.add("active");
-  //   }
-  // });
-  // document.addEventListener("scroll", () => {
-  //   console.log(listItem[0].offsetTop - window.scrollY);
-  //   listItem.forEach((item) => {
-  //     if (item.offsetTop - window.scrollY < 870) {
-  //       item.classList.add("active");
-  //     }
-  //     if (item.offsetTop - window.scrollY > 870) {
-  //       item.classList.remove("active");
-  //     }
-  //   });
-  // });
+  const listItem = document.querySelectorAll(".item-section");
+  listItem.forEach((item) => {
+    if (item.offsetTop - window.scrollY < 850) {
+      item.classList.add("activeShowTop");
+    }
+  });
+  document.addEventListener("scroll", () => {
+    console.log(listItem[1].offsetTop - window.scrollY);
+    listItem.forEach((item) => {
+      if (item.offsetTop - window.scrollY < 850) {
+        item.classList.add("activeShowTop");
+      }
+      // if (item.offsetTop - window.scrollY < -440) {
+      //   item.classList.remove("activeShowTop");
+      //   item.classList.add("activeShowBottom");
+      // }
+    });
+  });
 });
 function displayDataItems(dataItem) {
   let displayData = dataItem.map(function (item) {
