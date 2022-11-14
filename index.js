@@ -119,20 +119,16 @@ window.addEventListener("DOMContentLoaded", function () {
   displayDataItems(data);
   const listItem = document.querySelectorAll(".item-section");
   listItem.forEach((item) => {
-    if (item.offsetTop - window.scrollY < 850) {
+    if (item.offsetTop - window.scrollY < 870) {
       item.classList.add("activeShowTop");
     }
   });
   document.addEventListener("scroll", () => {
-    console.log(listItem[1].offsetTop - window.scrollY);
+    // console.log(listItem[1].offsetTop - window.scrollY);
     listItem.forEach((item) => {
-      if (item.offsetTop - window.scrollY < 850) {
+      if (item.offsetTop - window.scrollY < 805) {
         item.classList.add("activeShowTop");
       }
-      // if (item.offsetTop - window.scrollY < -440) {
-      //   item.classList.remove("activeShowTop");
-      //   item.classList.add("activeShowBottom");
-      // }
     });
   });
 });
