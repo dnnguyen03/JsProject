@@ -96,6 +96,12 @@ const data = [
     imgFooter: "counter",
   },
   {
+    id: 17,
+    href: "./gallery/gallery.html",
+    imgSrc: "img/img17.webp",
+    imgFooter: "gallery",
+  },
+  {
     id: 19,
     href: "./darkMode/darkMode.html",
     imgSrc: "img/img19.webp",

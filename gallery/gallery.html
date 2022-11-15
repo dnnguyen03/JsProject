@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="gallery.css" />
+    <title>Gallary</title>
+  </head>
+  <body>
+    <section class="section nature">
+      <img
+        src="./img/img1.jpeg"
+        title="nature-1"
+        class="img"
+        data-id="1"
+        alt="nature-1"
+      />
+      <img
+        src="./img/img2.jpeg"
+        title="nature-2"
+        class="img"
+        data-id="2"
+        alt="nature-2"
+      />
+      <img
+        src="./img/img3.jpeg"
+        title="nature-3"
+        class="img"
+        data-id="3"
+        alt="nature-3"
+      />
+    </section>
+    <section class="section city">
+      <img
+        src="img/img4.jpeg"
+        title="city-1"
+        data-id="1"
+        class="img"
+        alt="city-1"
+      />
+      <img
+        src="img/img5.jpeg"
+        title="city-2"
+        data-id="2"
+        class="img"
+        alt="city-2"
+      />
+      <img
+        src="img/img6.jpeg"
+        title="city-3"
+        data-id="3"
+        class="img"
+        alt="city-3"
+      />
+      <img
+        src="img/img7.jpeg"
+        title="city-4"
+        data-id="4"
+        class="img"
+        alt="city-4"
+      />
+      <img
+        src="img/img8.jpeg"
+        title="city-5"
+        data-id="5"
+        class="img"
+        alt="city-5"
+      />
+    </section>
+    <div class="modal">
+      <button class="close-btn">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="modal-content">
+        <!-- prev next buttons -->
+        <button class="prev-btn">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="next-btn">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+        <!-- content -->
+        <img src="" class="main-img" alt="" />
+        <h3 class="image-name">image name</h3>
+        <div class="modal-images"></div>
+      </div>
+    </div>
+    <script src="gallery.js"></script>
+  </body>
+</html>
