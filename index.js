@@ -130,10 +130,12 @@ window.addEventListener("DOMContentLoaded", function () {
     }
   });
   document.addEventListener("scroll", () => {
-    // console.log(listItem[1].offsetTop - window.scrollY);
     listItem.forEach((item) => {
       if (item.offsetTop - window.scrollY < 805) {
         item.classList.add("activeShowTop");
+      }
+      if (item.offsetTop - window.scrollY > 1200) {
+        item.classList.remove("activeShowTop");
       }
     });
   });
