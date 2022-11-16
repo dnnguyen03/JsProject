@@ -102,6 +102,12 @@ const data = [
     imgFooter: "gallery",
   },
   {
+    id: 18,
+    href: "./numbers/numbers.html",
+    imgSrc: "img/img18.webp",
+    imgFooter: "numbers",
+  },
+  {
     id: 19,
     href: "./darkMode/darkMode.html",
     imgSrc: "img/img19.webp",
@@ -118,6 +124,12 @@ const data = [
     href: "./dadJoker/dadJoker.html",
     imgSrc: "img/img21.webp",
     imgFooter: "dad jokes",
+  },
+  {
+    id: 22,
+    href: "./listProducts/products.html",
+    imgSrc: "img/img22.webp",
+    imgFooter: "products",
   },
 ];
 const DomPj = document.querySelector(".section-center");
