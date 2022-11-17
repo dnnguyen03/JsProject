@@ -2,6 +2,7 @@ function getElement(selection) {
   const element = document.querySelector(selection);
   return element;
 }
+let i = 0;
 function Gallary(element) {
   const listImg = [...element.querySelectorAll(".img")];
   const modal = getElement(".modal");
@@ -10,23 +11,22 @@ function Gallary(element) {
   const modalImages = getElement(".modal-images");
   const nextBtn = getElement(".next-btn");
   const prevBtn = getElement(".prev-btn");
-  prevBtn.addEventListener("click", () => {
+  // dùng onclick thay vì addevenlistener
+  prevBtn.onclick = () => {
     const selected = modalImages.querySelector(".selected");
-    console.log(selected);
     const prev =
       selected.previousElementSibling || modalImages.lastElementChild;
     selected.classList.remove("selected");
     prev.classList.add("selected");
     setImgMain(prev);
-  });
-  nextBtn.addEventListener("click", () => {
+  };
+  nextBtn.onclick = () => {
     const selected = modalImages.querySelector(".selected");
-    console.log(selected);
     const next = selected.nextElementSibling || modalImages.firstElementChild;
     selected.classList.remove("selected");
     next.classList.add("selected");
     setImgMain(next);
-  });
+  };
   function setImgMain(item) {
     modalImg.src = item.src;
     imgName.innerHTML = item.title;
@@ -57,5 +57,5 @@ function Gallary(element) {
     modal.classList.remove("open");
   });
 }
-const nature = Gallary(getElement(".nature"));
-const city = Gallary(getElement(".city"));
+Gallary(getElement(".nature"));
+Gallary(getElement(".city"));
