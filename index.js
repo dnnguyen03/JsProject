@@ -131,6 +131,12 @@ const data = [
     imgSrc: "img/img22.webp",
     imgFooter: "products",
   },
+  {
+    id: 23,
+    href: "./randomUser/randomUser.html",
+    imgSrc: "img/img23.webp",
+    imgFooter: "Random user",
+  },
 ];
 const DomPj = document.querySelector(".section-center");
 window.addEventListener("DOMContentLoaded", function () {
