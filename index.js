@@ -153,7 +153,7 @@ const data = [
     id: 26,
     href: "./stripe/stripe.html",
     imgSrc: "img/img26.webp",
-    imgFooter: "stripe",
+    imgFooter: "stripe submenus",
   },
 ];
 const DomPj = document.querySelector(".section-center");
