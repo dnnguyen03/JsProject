@@ -10,12 +10,12 @@ const fetchProducts = async () => {
 const displayProduct = (data) => {
   const { name: title, price, company, colors, description } = data.fields;
   const { url: img } = data.fields.image[0];
+  document.title = title.toUpperCase();
   const colorsList = colors
     .map((color) => {
       return `<span class="product-color" style="background: ${color}"></span>`;
     })
     .join("");
-  console.log(title);
   productDOM.innerHTML = `<div class="product-wrapper">
         <img src="${img}" class="img" alt="${title}" />
         <div class="product-info">

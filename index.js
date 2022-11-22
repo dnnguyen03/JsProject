@@ -137,6 +137,24 @@ const data = [
     imgSrc: "img/img23.webp",
     imgFooter: "Random user",
   },
+  {
+    id: 24,
+    href: "./cocktails/cocktails.html",
+    imgSrc: "img/img24.webp",
+    imgFooter: "Cocktails",
+  },
+  {
+    id: 25,
+    href: "./ES6Slider/ES6Slider.html",
+    imgSrc: "img/img25.webp",
+    imgFooter: "Slider",
+  },
+  {
+    id: 26,
+    href: "./stripe/stripe.html",
+    imgSrc: "img/img26.webp",
+    imgFooter: "stripe",
+  },
 ];
 const DomPj = document.querySelector(".section-center");
 window.addEventListener("DOMContentLoaded", function () {
