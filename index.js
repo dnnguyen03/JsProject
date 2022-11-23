@@ -155,6 +155,12 @@ const data = [
     imgSrc: "img/img26.webp",
     imgFooter: "stripe submenus",
   },
+  {
+    id: 27,
+    href: "./pagination/pagination.html",
+    imgSrc: "img/img27.webp",
+    imgFooter: "pagination",
+  },
 ];
 const DomPj = document.querySelector(".section-center");
 window.addEventListener("DOMContentLoaded", function () {
