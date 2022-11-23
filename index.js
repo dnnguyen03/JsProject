@@ -161,6 +161,12 @@ const data = [
     imgSrc: "img/img27.webp",
     imgFooter: "pagination",
   },
+  {
+    id: 28,
+    href: "./wiki/wiki.html",
+    imgSrc: "img/img28.webp",
+    imgFooter: "wikipedia",
+  },
 ];
 const DomPj = document.querySelector(".section-center");
 window.addEventListener("DOMContentLoaded", function () {
