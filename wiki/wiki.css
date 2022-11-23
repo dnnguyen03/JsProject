@@ -27,6 +27,7 @@ body {
   font-size: 2rem;
   text-transform: capitalize;
   font-weight: normal;
+  letter-spacing: 1px;
 }
 h4 {
   font-size: 1.5rem;
