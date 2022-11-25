@@ -167,6 +167,12 @@ const data = [
     imgSrc: "img/img28.webp",
     imgFooter: "wikipedia",
   },
+  {
+    id: 29,
+    href: "./comfyStore/comfyStore.html",
+    imgSrc: "img/img29.webp",
+    imgFooter: "comfy store",
+  },
 ];
 const DomPj = document.querySelector(".section-center");
 window.addEventListener("DOMContentLoaded", function () {
