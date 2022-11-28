@@ -1,6 +1,5 @@
 import { openCart } from "./toggleCart.js";
 
-const featured = document.querySelector(".featured");
 const ContainerProdInCart = document.querySelector(".cart-items");
 const itemCount = document.querySelector(".cart-item-count");
 const textTotalPrice = document.querySelector(".cart-total");
@@ -72,8 +71,8 @@ ContainerProdInCart.addEventListener("click", (e) => {
   localStorage.setItem("cart", JSON.stringify(listProdInCart));
   totalPrice();
 });
-export function addProdToCart(data) {
-  const allAddCart = featured.querySelectorAll(".product-cart-btn");
+export function addProdToCart(element, data) {
+  const allAddCart = element.querySelectorAll(".product-cart-btn");
   allAddCart.forEach((btn) => {
     btn.addEventListener("click", () => {
       data.forEach((product) => {

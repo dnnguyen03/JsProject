@@ -1,3 +1,5 @@
+import detailProd from "./showDetailProd.js";
+
 function displayProd(element, data) {
   element.innerHTML = data
     .map((item) => {
@@ -8,7 +10,7 @@ function displayProd(element, data) {
       <div class="product-container">
         <img src="${url}" class="product-img" alt="" />
         <div class="product-icons">
-          <a href="product.html?id=1" class="product-icon">
+          <a href="./singleProd/singleProd.html" class="product-icon" target="_blank">
             <i class="fas fa-search"></i>
           </a>
           <button class="product-cart-btn product-icon" data-id="${id}">
@@ -23,5 +25,6 @@ function displayProd(element, data) {
     </article> `;
     })
     .join("");
+  detailProd();
 }
 export default displayProd;

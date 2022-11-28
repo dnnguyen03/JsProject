@@ -8,12 +8,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="comfyStore.css" />
-    <title>Home | Comfy</title>
+    <link rel="stylesheet" href="./allProduct/allProduct.css" />
+    <title>Product | Comfy</title>
   </head>
   <body>
-    <!-- navbar -->
-    <nav class="navbar">
+    <nav class="navbar page">
       <div class="nav-center">
         <!-- links -->
         <div>
@@ -25,7 +24,7 @@
               <a href="comfyStore.html" class="nav-link"> home </a>
             </li>
             <li>
-              <a href="./allProduct.html" class="nav-link"> products </a>
+              <a href="allProduct.html" class="nav-link"> products </a>
             </li>
             <li>
               <a href="" class="nav-link"> about </a>
@@ -33,7 +32,11 @@
           </ul>
         </div>
         <!-- logo -->
-        <img src="./img/logo.svg" class="nav-logo" alt="logo" />
+        <img
+          src="./allProduct/img/logo-black.svg"
+          class="nav-logo"
+          alt="logo"
+        />
         <!-- cart icon -->
         <div class="toggle-container">
           <button class="toggle-cart">
@@ -44,11 +47,9 @@
       </div>
     </nav>
     <!-- hero -->
-    <section class="hero">
-      <div class="hero-container">
-        <h1 class="text-slanted">rest, relax, unwind</h1>
-        <h3>Embrace your choices - we do</h3>
-        <a href="products.html" class="hero-btn"> show now </a>
+    <section class="page-hero">
+      <div class="section-center">
+        <h3 class="page-hero-title">Home / Products</h3>
       </div>
     </section>
     <!-- sidebar -->
@@ -73,7 +74,7 @@
             </a>
           </li>
           <li>
-            <a href="#" class="sidebar-link">
+            <a href="about.html" class="sidebar-link">
               <i class="fas fa-book fa-fw"></i>
               about
             </a>
@@ -94,21 +95,40 @@
         <div class="cart-items"></div>
         <!-- footer -->
         <footer>
-          <h3 class="cart-total">total : $12.99</h3>
-          <button class="cart-checkout">checkout</button>
+          <h3 class="cart-total text-slanted"></h3>
+          <button class="cart-checkout btn">checkout</button>
         </footer>
       </aside>
     </div>
-    <!-- featured products -->
-    <section class="section featured">
-      <div class="title">
-        <h2><span>/</span> featured</h2>
+    <!-- products -->
+    <section class="products">
+      <!-- filters -->
+      <div class="filters">
+        <div class="filters-container">
+          <!-- search -->
+          <form class="input-form">
+            <input type="text" class="search-input" placeholder="search..." />
+          </form>
+          <!-- categories -->
+          <h4>Company</h4>
+          <article class="companies"></article>
+          <!-- price -->
+          <h4>Price</h4>
+          <form class="price-form">
+            <input
+              type="range"
+              class="price-filter"
+              min="0"
+              value="50"
+              max="100"
+            />
+          </form>
+          <p class="price-value"></p>
+        </div>
       </div>
-      <div class="featured-center section-center">
-        <!-- single product featured-->
-      </div>
-      <a href="products.html" class="btn"> all products </a>
+      <!-- products -->
+      <div class="products-container"></div>
     </section>
-    <script type="module" src="comfyStore.js"></script>
+    <script type="module" src="./allProduct/allProduct.js"></script>
   </body>
 </html>

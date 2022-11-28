@@ -8,12 +8,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="comfyStore.css" />
-    <title>Home | Comfy</title>
+    <link rel="stylesheet" href="../comfyStore.css" />
+    <title>Document</title>
   </head>
   <body>
-    <!-- navbar -->
-    <nav class="navbar">
+    <nav class="navbar page">
       <div class="nav-center">
         <!-- links -->
         <div>
@@ -22,33 +21,35 @@
           </button>
           <ul class="nav-links">
             <li>
-              <a href="comfyStore.html" class="nav-link"> home </a>
+              <a href="index.html" class="nav-link"> home </a>
             </li>
             <li>
-              <a href="./allProduct.html" class="nav-link"> products </a>
+              <a href="products.html" class="nav-link"> products </a>
             </li>
             <li>
-              <a href="" class="nav-link"> about </a>
+              <a href="about.html" class="nav-link"> about </a>
             </li>
           </ul>
         </div>
         <!-- logo -->
-        <img src="./img/logo.svg" class="nav-logo" alt="logo" />
+        <img
+          src="../allProduct/img/logo-black.svg"
+          class="nav-logo"
+          alt="logo"
+        />
         <!-- cart icon -->
         <div class="toggle-container">
           <button class="toggle-cart">
             <i class="fas fa-shopping-cart"></i>
           </button>
-          <span class="cart-item-count">0</span>
+          <span class="cart-item-count">1</span>
         </div>
       </div>
     </nav>
     <!-- hero -->
-    <section class="hero">
-      <div class="hero-container">
-        <h1 class="text-slanted">rest, relax, unwind</h1>
-        <h3>Embrace your choices - we do</h3>
-        <a href="products.html" class="hero-btn"> show now </a>
+    <section class="page-hero">
+      <div class="section-center">
+        <h3 class="page-hero-title">Home / Single Product</h3>
       </div>
     </section>
     <!-- sidebar -->
@@ -61,19 +62,19 @@
         <!-- links -->
         <ul class="sidebar-links">
           <li>
-            <a href="comfyStore.html" class="sidebar-link">
+            <a href="index.html" class="sidebar-link">
               <i class="fas fa-home fa-fw"></i>
               home
             </a>
           </li>
           <li>
-            <a href="allProduct.html" class="sidebar-link">
+            <a href="products.html" class="sidebar-link">
               <i class="fas fa-couch fa-fw"></i>
               products
             </a>
           </li>
           <li>
-            <a href="#" class="sidebar-link">
+            <a href="about.html" class="sidebar-link">
               <i class="fas fa-book fa-fw"></i>
               about
             </a>
@@ -94,21 +95,27 @@
         <div class="cart-items"></div>
         <!-- footer -->
         <footer>
-          <h3 class="cart-total">total : $12.99</h3>
-          <button class="cart-checkout">checkout</button>
+          <h3 class="cart-total text-slanted"></h3>
+          <button class="cart-checkout btn">checkout</button>
         </footer>
       </aside>
     </div>
-    <!-- featured products -->
-    <section class="section featured">
-      <div class="title">
-        <h2><span>/</span> featured</h2>
+    <!-- product info -->
+    <section class="single-product">
+      <div class="section-center single-product-center">
+        <img src="" class="single-product-img img" alt="" />
+        <article class="single-product-info">
+          <div>
+            <h2 class="single-product-title"></h2>
+            <p class="single-product-company text-slanted"></p>
+            <p class="single-product-price"></p>
+            <div class="single-product-colors"></div>
+            <p class="single-product-desc"></p>
+            <button class="addToCartBtn btn" data-id="id">add to cart</button>
+          </div>
+        </article>
       </div>
-      <div class="featured-center section-center">
-        <!-- single product featured-->
-      </div>
-      <a href="products.html" class="btn"> all products </a>
     </section>
-    <script type="module" src="comfyStore.js"></script>
+    <script type="module" src="singleProd.js"></script>
   </body>
 </html>
