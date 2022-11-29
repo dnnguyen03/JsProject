@@ -436,7 +436,7 @@
   margin: 0 0.5rem;
 }
 .product-icon:hover {
-  background: hsl(210, 36%, 96%);
+  background: hsl(21, 65%, 59%);
 }
 .product-container:hover .product-icons {
   opacity: 1;
@@ -599,6 +599,8 @@
   width: 100%;
   text-align: center;
   margin-top: 4rem;
+  text-transform: capitalize;
+  font-weight: normal;
 }
 /*
   =============== 
@@ -630,9 +632,7 @@
 .single-product-center {
   margin: 2rem auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0 2rem;
+  gap: 0 3rem;
 }
 .single-product-title {
   font-size: 2.5rem;

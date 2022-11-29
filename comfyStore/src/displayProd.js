@@ -1,6 +1,9 @@
 import detailProd from "./showDetailProd.js";
 
 function displayProd(element, data) {
+  if (data.length == 0) {
+    return (element.innerHTML = `<h3 class="filter-error">sorry, no products matched your search</h3>`);
+  }
   element.innerHTML = data
     .map((item) => {
       const { id } = item;
